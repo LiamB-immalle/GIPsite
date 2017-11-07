@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <title>GipSite Liam Brangers</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="animated-transition-effects/css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="animated-transition-effects/css/style.css"> <!-- Resource style -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
   body,
   h1,
@@ -43,7 +46,7 @@
   }
 </style>
 
-<body class="w3-black">
+<body class="w3-black cartoon-transition">
 
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
@@ -126,20 +129,44 @@
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for buttons -->
+    <main class="cd-main-content">
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <p><button onclick= class="w3-button w3-round-large w3-jumbo w3-green w3-block">Stage</button></p>
+        <p><button class="w3-button w3-round-large w3-jumbo w3-green w3-block cd-btn cd-modal-trigger">Stage</button></p>
         <p><button class="w3-button w3-round-large w3-jumbo w3-green w3-disabled w3-block">Coming soon</button></p>
       </div>
 
       <div class="w3-half">
-        <p><button class="w3-button w3-round-large w3-jumbo w3-green w3-disabled w3-block">Coming soon</button></p>
+        <p><button class="w3-button w3-round-large w3-jumbo w3-green w3-disabled w3-block">IT-tapa</button></p>
         <p><button class="w3-button w3-round-large w3-jumbo w3-green w3-disabled w3-block">Coming soon</button></p>
       </div>
       <!-- End button grid -->
     </div>
+    </main>
+    <div class="cd-modal" id="modal-1">
+      <div class="modal-content">
+        <h2>My Modal Content</h2>
+        
+        <p>
+          Lorem ipsum dolor sit amet, consectetu
+        </p>
+    
+        <p>
+          Lorem ipsum dolor sit amet, consectetur 
+        </p>
+      </div> <!-- .modal-content -->
     <!-- End Portfolio Section -->
   </div>
+
+  
+  
+    <a href="#0" class="modal-close">Close</a>
+  </div> <!-- .cd-modal -->
+  <div class="cd-transition-layer" data-frame="25"> 
+    <div class="bg-layer"></div>
+  </div> <!-- .cd-transition-layer -->
+
+  
 
   <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
@@ -149,6 +176,12 @@
     <!-- End footer -->
   </footer>
 
+  <script src="animated-transition-effects/js/modernizr.js"></script> <!-- Modernizr -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+    if( !window.jQuery ) document.write('<script src="animated-transition-effects/js/jquery-2.2.1-min.js"><\/script>');
+  </script>
+  <script src="animated-transition-effects/js/main.js"></script> <!-- Resource jQuery -->
   <!-- END PAGE CONTENT -->
   </div>
 
