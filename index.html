@@ -173,7 +173,7 @@
   </div>
 
   <div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-modal-content w3-animate-bottom">
 
       <header class="w3-container w3-green">
         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-display-topright">&times;</span>
@@ -284,5 +284,14 @@
   </div>
 
 </body>
+
+<script>
+  document.onkeydown = function (evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+      document.getElementById('id01').style.display = 'none';
+    }
+  };
+</script>
 
 </html>
